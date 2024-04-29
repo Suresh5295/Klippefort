@@ -17,21 +17,6 @@
   });
 
 
-  // let ImageIndex = 0;
-  // const proimages = document.querySelectorAll('.posimg img');
-  // const arrow1 = document.getElementById("arrowright");
-  // const arrow2 = document.getElementById("arrowleft");
-
-  // arrow1.addEventListener('click', function() {
-  //   proimages[ImageIndex].style.display = 'none';
-  //   ImageIndex = (ImageIndex + 1) % proimages.length;
-  //   proimages[ImageIndex].style.display = 'block';
-  // });
-  // arrow2.addEventListener('click', function() {
-  //   proimages[ImageIndex].style.display = 'none';
-  //   ImageIndex = (ImageIndex + 1) % proimages.length;
-  //   proimages[ImageIndex].style.display = 'block';
-  // });
 
   let imageIndex = 0;
   
@@ -66,7 +51,14 @@
             proheading[headIndex].style.display = 'block';
         }
       );
-      
+      arr2.addEventListener('click', function() {
+        
+        proheading[headIndex].style.display = 'none';
+        headIndex = (headIndex + 1) % proheading.length;
+          proheading[headIndex].style.display = 'block';
+      }
+    );
+    
 
  
    
